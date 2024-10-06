@@ -31,6 +31,44 @@ You can customize Vk by editing the following:
 - **Styling**: Modify the styles in `style.css` to change the appearance.
 - **Add Features**: Extend the functionality by adding more commands in `script.js`.
 
+## Responses
+The virtual assistant Vk responds to various voice commands as follows:
+
+### Greeting Commands:
+- **"hello," "hi," or "hey":** 👋
+  - **Response:** "hello sir, what can I help you?"
+
+### Identity Command:
+- **"who are you":** 🤖
+  - **Response:** "I am virtual assistant Vk, created by Yash Wasankar."
+
+### Website Opening Commands:
+- **"open youtube":** 📺
+  - **Response:** "opening youtube..." → opens YouTube.
+- **"open google":** 🔍
+  - **Response:** "opening google..." → opens Google.
+- **"open facebook":** 📘
+  - **Response:** "opening facebook..." → opens Facebook.
+- **"open instagram":** 📸
+  - **Response:** "opening instagram..." → opens Instagram.
+- **"open calculator":** 🧮
+  - **Response:** "opening calculator..." → opens the calculator application.
+- **"open whatsapp":** 💬
+  - **Response:** "opening whatsapp..." → opens WhatsApp.
+
+### Time Command:
+- **"time":** ⏰
+  - **Response:** (Speaks the current time)
+
+### Date Command:
+- **"date":** 📅
+  - **Response:** (Speaks the current date)
+
+### Fallback Response:
+- **If the command is not recognized:** ❓
+  - **Response:** "This is what I found on the internet regarding [user query]" followed by a Google search for that query.
+
+
 ## Future Improvements 🚀
 
 - ❌ Add error handling for unrecognized commands.
