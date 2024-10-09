@@ -1,47 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   flex-direction: column;
+  padding: 10px;
 }
+
+/* Logo styling */
 #logo {
-  width: 20vw;
+  width: 15vw; /* Use viewport width for responsiveness */
+  max-width: 150px; /* Cap the size on large screens */
+  height: auto;
 }
+
+/* Heading styling */
 h1 {
   color: aliceblue;
   font-family: "Protest Guerrilla", sans-serif;
+  text-align: center;
+  font-size: 2.5rem; /* Use rem units to scale with screen size */
 }
+
 #name {
   color: rgb(212, 43, 122);
-  font-size: 45px;
+  font-size: 2.8rem; /* Use rem for scalable fonts */
 }
+
 #va {
   color: rgb(43, 206, 212);
-  font-size: 45px;
+  font-size: 2.8rem; /* Use rem for scalable fonts */
 }
+
+/* Voice icon styling */
 #voice {
   width: 100px;
   display: none;
 }
+
+/* Button styling */
 #btn {
-  width: 30%;
+  width: 30vw; /* Set the button to be responsive based on the screen */
+  max-width: 300px;
+  min-width: 150px; /* Minimum width to maintain usability on very small screens */
   background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 1.2rem; /* Scalable font size */
   border-radius: 20px;
   color: white;
   box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
@@ -49,7 +68,87 @@ h1 {
   transition: all 0.5s;
   cursor: pointer;
 }
+
 #btn:hover {
   box-shadow: 2px 2px 20px rgb(21, 145, 207), 2px 2px 20px rgb(201, 41, 116);
   letter-spacing: 2px;
+}
+
+/* Media queries for smaller screens like tablets */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #name, #va {
+    font-size: 2.2rem;
+  }
+
+  #btn {
+    width: 35vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    width: 20vw;
+    max-width: 120px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #name, #va {
+    font-size: 1.8rem;
+  }
+
+  #btn {
+    width: 40vw;
+    font-size: 1rem;
+  }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 480px) {
+  #logo {
+    width: 30vw;
+    max-width: 100px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #name, #va {
+    font-size: 1.5rem;
+  }
+
+  #btn {
+    width: 60vw;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Media query for extra-large screens (desktops) */
+@media (min-width: 1440px) {
+  #logo {
+    width: 12vw;
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #name, #va {
+    font-size: 3.2rem;
+  }
+
+  #btn {
+    width: 25vw;
+    font-size: 1.5rem;
+  }
 }

@@ -1,4 +1,4 @@
-// Select the necessary HTML elements
+
 let btn = document.querySelector("#btn"); // Button to start speech recognition
 let content = document.querySelector("#content"); // Area to display recognized speech
 let voice = document.querySelector("#voice"); // Element to show voice feedback
